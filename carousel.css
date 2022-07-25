@@ -5,6 +5,8 @@ body{
     border: 5px solid #555;
     width: 900px;
     height: 700px;
+    color: white;
+    font-size: 50px;
 }
 #carouselSlides {
     border: 2px solid white;

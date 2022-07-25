@@ -19,11 +19,32 @@ function showImage( n ) {
     `
 }
 
+function showIndicators ( n ){
+   carouselIndicators.innerHTML = ``
+    for (let i=0; i<IMAGES.length; i++){
+        if(i == n ){
+        carouselIndicators.innerHTML += ` + `
+    } else {
+        carouselIndicators.innerHTML += ` - `
+    }
+    }
+}
+
 function next() {
     //HW2: boundaries/ limits - if/else
     //HW3*: optimize this 2 lines
     // HW4: create prev() function
     currentIndex++
     showImage(currentIndex)
+    showIndicators(currentIndex)
+}
+function prev() {
+    //HW2: boundaries/ limits - if/else
+    //HW3*: optimize this 2 lines
+    // HW4: create prev() function
+    currentIndex--
+    showImage(currentIndex)
+    showIndicators(currentIndex)
 }
 showImage(currentIndex)
+showIndicators(currentIndex)
