@@ -1,0 +1,13 @@
+body{
+    background-color: #222;
+}
+#carousel {
+    border: 5px solid #555;
+    width: 900px;
+    height: 700px;
+}
+#carouselSlides {
+    border: 2px solid white;
+    width: 820px;
+    height: 620px;
+}
